@@ -29,7 +29,7 @@ export default function HeroPropertyCarousel() {
   }, [paused]);
 
   return (
-    <section className="border-b border-foreground-950/12 bg-background-100">
+    <section className="border-b border-foreground-950/12 bg-secondary-100">
       <div
         className="mx-auto max-w-[1500px] px-4 py-10 md:px-10 md:py-14"
         onMouseEnter={() => setPaused(true)}
@@ -50,7 +50,7 @@ export default function HeroPropertyCarousel() {
               type="button"
               onClick={() => goTo(index - 1)}
               aria-label="Show previous featured listing"
-              className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-foreground-950"
+              className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-primary-500"
             >
               <i className="ri-arrow-left-line text-xs" />
               Previous
@@ -60,7 +60,7 @@ export default function HeroPropertyCarousel() {
               type="button"
               onClick={() => goTo(index + 1)}
               aria-label="Show next featured listing"
-              className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-foreground-950"
+              className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-primary-500"
             >
               Next
               <i className="ri-arrow-right-line text-xs" />
@@ -90,7 +90,7 @@ export default function HeroPropertyCarousel() {
                       title={`${property.name}, ${property.address}`}
                       className="img-push h-full w-full object-cover object-top"
                     />
-                    <span className="absolute left-0 top-0 bg-foreground-950 px-3 py-1.5 font-label text-[9px] text-background-50">
+                    <span className="absolute left-0 top-0 bg-primary-500 px-3 py-1.5 font-label text-[9px] text-background-50">
                       {property.tag}
                     </span>
                     <span className="veil" aria-hidden="true" />
@@ -108,7 +108,7 @@ export default function HeroPropertyCarousel() {
                       <span className="font-heading text-lg text-foreground-950">
                         {property.price}
                       </span>
-                      <span className="inline-flex items-center gap-2 font-label text-[9px] text-foreground-700 transition-colors group-hover:text-accent-700">
+                      <span className="inline-flex items-center gap-2 font-label text-[9px] text-foreground-700 transition-colors group-hover:text-accent-600">
                         View Property
                         <i className="ri-arrow-right-line btn-arrow text-[11px]" />
                       </span>

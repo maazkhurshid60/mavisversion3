@@ -27,9 +27,9 @@ export default function Hero() {
 
         {/* Warm ink scrim — deep enough for the type, light enough to keep the
             architecture readable. */}
-        <div className="absolute inset-0 -z-10 bg-foreground-950/45" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-primary-950/45" aria-hidden="true" />
         <div
-          className="absolute inset-0 -z-10 bg-gradient-to-t from-foreground-950 via-foreground-950/15 to-foreground-950/55"
+          className="absolute inset-0 -z-10 bg-gradient-to-t from-primary-950 via-primary-950/15 to-primary-950/55"
           aria-hidden="true"
         />
 
@@ -97,7 +97,7 @@ export default function Hero() {
           delay={520}
           className="absolute bottom-8 right-4 hidden lg:block lg:right-10"
         >
-          <div className="border border-background-50/30 bg-foreground-950/35 px-6 py-4">
+          <div className="border border-background-50/30 bg-primary-950/35 px-6 py-4">
             <p className="font-heading text-2xl leading-none text-background-50">500+</p>
             <p className="mt-2 font-heading text-[0.85rem] italic text-background-50/70">Homes Sold</p>
           </div>

@@ -29,7 +29,7 @@ export default function FeaturedProperties() {
                     title={`${property.name}, ${property.address}`}
                     className="img-push h-full w-full object-cover object-center"
                   />
-                  <span className="absolute left-0 top-0 bg-foreground-950 px-3 py-1.5 font-label text-[9px] text-background-50">
+                  <span className="absolute left-0 top-0 bg-primary-500 px-3 py-1.5 font-label text-[9px] text-background-50">
                     {property.tag}
                   </span>
 
@@ -49,7 +49,7 @@ export default function FeaturedProperties() {
                     {property.address}
                     {property.meta ? ` · ${property.meta}` : ""}
                   </p>
-                  <span className="mx-auto mt-4 block h-px w-8 bg-foreground-950/20" aria-hidden="true" />
+                  <span className="mx-auto mt-4 block h-px w-8 bg-primary-950/20" aria-hidden="true" />
                   <span className="mt-3 font-heading text-base text-foreground-950">
                     {property.price}
                   </span>

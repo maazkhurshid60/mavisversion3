@@ -27,7 +27,7 @@ export default function Neighborhoods() {
             <div className="hidden items-center gap-7 md:flex">
               <Link
                 to="/communities"
-                className="link-underline cursor-pointer whitespace-nowrap font-heading text-[0.95rem] italic text-foreground-800 transition-colors hover:text-foreground-950"
+                className="link-underline cursor-pointer whitespace-nowrap font-heading text-[0.95rem] italic text-foreground-800 transition-colors hover:text-primary-500"
               >
                 View All
               </Link>
@@ -36,7 +36,7 @@ export default function Neighborhoods() {
                   type="button"
                   aria-label="Previous neighborhoods"
                   onClick={() => scrollByCard(-1)}
-                  className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-foreground-950"
+                  className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-primary-500"
                 >
                   <i className="ri-arrow-left-line text-xs" />
                   Previous
@@ -46,7 +46,7 @@ export default function Neighborhoods() {
                   type="button"
                   aria-label="Next neighborhoods"
                   onClick={() => scrollByCard(1)}
-                  className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-foreground-950"
+                  className="text-arrows cursor-pointer text-foreground-600 transition-colors hover:text-primary-500"
                 >
                   Next
                   <i className="ri-arrow-right-line text-xs" />
@@ -91,10 +91,10 @@ export default function Neighborhoods() {
                 <h3 className="font-heading text-xl leading-tight text-foreground-950">
                   {hood.name}
                 </h3>
-                <i className="ri-arrow-right-up-line text-foreground-500 transition-all duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-700" />
+                <i className="ri-arrow-right-up-line text-foreground-500 transition-all duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-600" />
               </div>
               <span
-                className="mt-3 block h-px w-full origin-left scale-x-100 bg-foreground-950/12 transition-colors duration-500 group-hover:bg-foreground-950/40"
+                className="mt-3 block h-px w-full origin-left scale-x-100 bg-primary-950/12 transition-colors duration-500 group-hover:bg-foreground-950/40"
                 aria-hidden="true"
               />
             </Link>
